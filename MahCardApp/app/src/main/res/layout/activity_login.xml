@@ -1,0 +1,95 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edt_txt_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#0E0D0D"
+            >
+
+            <EditText
+                android:id="@+id/edt_txt_as_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=" username"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColorHint="#0E0D0D"
+            >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_txt_as_password"
+                android:autofillHints="Password"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#000" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dp"
+            android:text="Forget Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/signin_btn"
+            android:textColor="#fff"
+            android:text="Signin"
+            android:background="@drawable/background"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You don't have a account ?"
+                app:fontFamily="@font/actor" />
+            <TextView
+                android:id="@+id/signup_txt"
+                android:textColor="#AD27BD"
+                android:text="Register"
+                android:clickable="true"
+                app:fontFamily="@font/actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

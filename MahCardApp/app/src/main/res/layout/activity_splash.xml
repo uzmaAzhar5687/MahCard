@@ -1,0 +1,25 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/purple"
+    >
+
+    <me.wangyuwei.particleview.ParticleView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:pv_host_text="Mah"
+        app:pv_particle_text="Card"
+        app:pv_host_text_size="50sp"
+        app:pv_particle_text_size="50sp"
+        app:pv_background_color="@color/purple"
+        app:pv_text_color="@color/white"
+        app:pv_host_text_anim_time="1000"
+        app:pv_spread_anim_time="1000"
+        app:pv_text_anim_time="2000"
+        />
+
+</LinearLayout>
